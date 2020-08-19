@@ -1,0 +1,146 @@
+header {
+  background-image: url(./headerbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 300px;
+}
+h1 {
+  padding-bottom: 50px;
+}
+h2 {
+  font-size: 3vw;
+}
+
+body {
+  background-image: url(./spacebackground.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.headerimage {
+  width: 50%;
+  min-width: 300px;
+}
+.about {
+  width: 70%;
+  display: inline-block;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.poster {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+.poster > img {
+  width: 100%;
+}
+.poster > p {
+  font-size: 20px;
+  overflow-x: visible;
+  color: black;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.cast {
+  width: 98%;
+  display: inline-flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.cast::-webkit-scrollbar {
+  height: 5px;
+  width: 50%;
+}
+.cast::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+.castbox {
+  text-align: center;
+  border: 2px white solid;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 20px 20px;
+  transition: 0.5s;
+  height: 250px;
+}
+.castbox > a {
+  font-size: 20px;
+}
+
+.castbox:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px lightgrey;
+  cursor: pointer;
+}
+
+.castphoto {
+  max-height: 180px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.last {
+  background-color: rgba(73, 73, 73, 0.5);
+  color: white;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+.last > a {
+  margin: 0px 20px 0px;
+}
+.video {
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .about {
+    width: 100%;
+    font-size: 10px;
+    align-content: center;
+    text-align: center;
+  }
+  .poster {
+    display: block;
+    margin: auto;
+    min-width: 50%;
+    font-size: 20px;
+  }
+  .poster > p {
+    font-size: 10px;
+  }
+  .options {
+    align-items: center;
+  }
+  .castbox {
+    max-height: 200px;
+    font-size: 10px;
+  }
+  .castbox > a {
+    font-size: 15px;
+  }
+  .castphoto {
+    width: 100px;
+  }
+  .last > a {
+    margin: 5px;
+  }
+}
+              
